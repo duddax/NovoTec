@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 - Absolute</title>
+</head>
+
+<style>
+
+    *{
+    margin: 0;
+    padding: 0;
+    }
+
+    div {
+        padding: 20px;
+        width: 200px;
+    }
+
+    .caixa01{
+        background-color: green;
+    }
+
+    .caixa02{
+        top: 0px;
+        left: 500px;
+        position: absolute;
+        background-color: red;
+    }
+
+    .caixa03{
+        background-color: blue;
+    }
+
+    .exemplo02, .exemplo03{
+        margin-top: 10px;
+        position: relative;
+        background-color: grey;
+        border: 1px solid black;
+    }
+
+    .exemplo03{
+        padding: 100px;
+        /* position: static; */
+    }
+
+    .botaoFlutuante {
+        right: -20px;
+        bottom: -20px;
+        position: absolute;
+
+        width: 60px;
+        border-radius: 50px;
+        background-color: orange;
+    }
+    
+    h2 {
+        color: blueviolet;
+    }
+
+
+</style>
+
+
+<body>
+    <div class="caixa01">
+        <p>Caixa 1</p>
+    </div>
+    <div class="caixa02">
+        <p>Caixa 2</p>
+    </div>
+    <div class="caixa03">
+        <p>Caixa 3</p>
+    </div>
+
+
+    <div class="exemplo02">
+        <div class="caixa01">
+            <p>Caixa 1</p>
+        </div>
+        <div class="caixa02">
+            <p>Caixa 2</p>
+        </div>
+        <div class="caixa03">
+            <p>Caixa 3</p>
+        </div>
+    </div>
+
+    <div class="exemplo03">
+        <div class="botaoFlutuante">
+            <h2>Aqui</h2>
+        </div>
+
+    </div>
+</body>
+</html>
